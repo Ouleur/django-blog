@@ -1,65 +1,131 @@
-body{
-	
-	padding-left: 15px;
+* ,body, div{
+    margin: 0;
+    padding: 0;
 }
-
-h1 a {
-    color: #FCA205;
-    font-family: 'Lobster';
+.line {
+    height: 10px;
+    background-color: #474345;
 }
-
-/*###########################################################################################*/
 
 .page-header {
-    background-color: #ff9400;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
-}
-
-
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
-    text-decoration: none;
-    padding-top: 20px;
+    height: 80px;
     
 }
+.logo {
+    margin-left: 280px;
+}
+.menu {
+    color: #989898;
+    right: 160px;
+    position: absolute;
+    top: 40px;
+}
 
+.menu ul li{
+    display: inline-block;
+    margin-right: 60px;
+}
 
+.menu ul li a{
+    text-decoration: none;
+    color: #989898;
+
+}
 .content {
-    margin-left: 40px;
+    background-color: #c3c1c2;
+    height: 600px;
+}
+
+.imageG {
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    top: 120px;
+    left: 250px;
+    border-radius: 50%;
+    background-color: #323f4a;
+}
+
+.hello {
+    position: absolute;
+    top: 100px; 
+    right: 460px;
+}
+
+.hello h1 {
+    font-size: 6em;
+}
+
+#bit {
+    font-size: 3em;
+}
+
+#text {
+    width: 500px;
+    position: absolute;
+    right: 230px;
+    top: 450px; 
+}
+.imageP1,.imageP2,.imageP3{
+    top: 280px;
+    margin-left: 50px;
+    text-align: center;
+
+}
+.imageP1 {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    left: 700px;
+    border-radius: 50%;
+    background-color: #f00261;
+
+}
+.imageP2 {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    left: 880px;
+    border-radius: 50%;
+    background-color: #1d8fb9;
 
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+.imageP3 {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    left: 1060px;
+    border-radius: 50%;
+    background-color: #2fda2b;
+
 }
 
-.date {
-    float: left;
-    color: #828282;
+.imageP1 p,.imageP2 p,.imageP3 p {
+    margin-top: 60px;
+    color: #c1c1c1;
+    font-size: 1.5em;
 
 }
 
-.save {
-    float: right;
+
+.footer {
+    background-color: #f00261;
+}
+.footer div.cont{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+
 }
 
-.post-form textarea, .post-form input {
-    width: 100%;
+.call ,.contact,.follow{
+    display: inline-block;
+    text-align: left;
 }
 
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
-}
-
-.post {
-    margin-bottom: 70px;
-}
-
-.post h1 a, .post h1 a:visited {
-    color: #000000;
+  .contact,   .follow{
+    margin-left: 60px;
+    margin-top: -20px; 
 }

@@ -5,15 +5,16 @@ from django.shortcuts import render, get_object_or_404
 
 # Create your views here.
 
+# Fonction pour la liste des posts
 def post_list(request):
+	
 	posts = Post.objects.filter(published_date__lte=timezone.now()).order_by("published_date")
-	# posts = Post.objects.get(pk=pk)
 	return render(request, 'blog/post_list.html', {'posts':posts})
 
 
+# Fonction pour le detail des focntion
 def post_detail(request,pk):
-	# Post.objects.get(pk=pk)
-	# posts = Post.objects.filter(published_date__lte=timezone.now()).order_by("published_date")
+
 	post = get_object_or_404(Post, pk=pk)
 	posts = Post.objects.get(pk=pk)
 	return render(request, 'blog/post_detail.html', {'post':posts})
