@@ -156,3 +156,43 @@
     margin-left: 60px;
     margin-top: -20px; 
 }
+
+
+
+/*################ A propos #####################*/
+
+#bio,#contacter{
+    display: inline-block;
+}
+/*Biographie*/
+#bio {
+    width: 500px;
+}
+#bio img {
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin: 0 10px 2px 0;
+    border-radius: 50%;
+}
+
+/*Contacter */
+#contacter{
+    float: right;
+    width: 329px;
+}
+
+.mail,.obj {
+    width: 329px;
+    height: 40px;
+}
+.mesg {
+    width: 329px;
+    height: 201px;
+}
+
+.valider {
+    width: 329px;
+    height: 40px;
+    border-bottom: 2px solid black; 
+}

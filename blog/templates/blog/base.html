@@ -9,47 +9,36 @@
     </head>
     <body>
         <div class="all">
-                <div class="line"></div>
-                <div class="page-header">
-                    <div class="header-min">
-                        <div class="logo"><h1>ADOU Vianney</h1></div>
-                        <div class="menu">
-                            <ul>
-                                <li><a href="#" class="menu1">Home</a></li>
-                                <!-- <li><a href="#" class="menu2">Menu 2</a></li>
-                                <li><a href="#" class="menu3">Menu 3</a></li> -->
-                                <li><a href="#" class="menu4">&Agrave; propos</a></li>
-                            </ul>
-                        </div>
-                 
-                    <!-- <h1><a href="/">Le Blog de OULEUR</a></h1> -->
+            <div class="line"></div>
+            <div class="page-header">
+                <div class="header-min">
+                    <div class="logo"><h1>ADOU Vianney</h1></div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="{% url 'home' %}" class="menu1">Home</a></li>
+                            <!-- <li><a href="#" class="menu2">Menu 2</a></li>
+                            <li><a href="#" class="menu3">Menu 3</a></li> -->
+                            <li><a href="{% url 'apropos' %}" class="menu4">&Agrave; propos</a></li>
+                        </ul>
                     </div>
-                    
+             
+                <!-- <h1><a href="/">Le Blog de OULEUR</a></h1> -->
                 </div>
-            <div class="content">
-                <div class="content-min">
-                    <!-- <div class="row">
-                        <div class="col-md-8">
-                        {% block content %}
-                        {% endblock %}
+                
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="content">
+                        <div class="content-min">
+                            {% block content %}
+                            {% endblock %}
                         </div>
-                    </div> -->
-                    
-                    
-                    <div class="imageG" ><img src="{% static "img/myphoto.png" %}" /></div>
-                    <div class="content-min-1"> 
-                        <div class="hello"><p id="h"><h1>Bonjour,</h1></p><p id="bit">une id&eacute;e de moi:</p></div>
-                        <div class="imageP1"><p>Informatique</p></div>
-                        <div class="imageP2"><p>Electronique</p></div>
-                        <div class="imageP3"><p>Hybride</p></div>
-                        <br>
-                        <br>
-                        <p id="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in  eprehenderit in voluptate velit esse </p>
                     </div>
                 </div>
             </div>
-
-
+        </div>
+                    
     </div >
     <div class="footer"> 
             <div class="cont">

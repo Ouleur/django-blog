@@ -1,0 +1,19 @@
+{% extends 'blog/base.html' %}
+{% load i18n staticfiles %}
+
+{% block content %}
+			<!-- <div class="content">
+                <div class="content-min"> -->
+                    <div class="imageG" ><img src="{% static "img/myphoto.png" %}" /></div>
+                    <div class="content-min-1"> 
+                        <div class="hello"><p id="h"><h1>Bonjour,</h1></p><p id="bit">une id&eacute;e de moi:</p></div>
+                        <a href="{% url 'informatique' %}"><div class="imageP1"><p>Informatique</p></div></a>
+                        <a href="{% url 'electronique' %}"><div class="imageP2"><p>Electronique</p></div></a>
+                        <a href="{% url 'hybride' %}"><div class="imageP3"><p>Hybride</p></div></a>
+                        <br>
+                        <br>
+                        <p id="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in  eprehenderit in voluptate velit esse </p>
+                    </div>
+           <!--      </div>
+            </div> -->
+{% endblock %}

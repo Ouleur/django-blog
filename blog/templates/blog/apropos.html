@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+{% load i18n staticfiles %}
+
+{% block content %}
+	<div id="bio">Ma Biographie:<br><br>
+	<img src="{% static "img/myphoto.png" %}"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in  eprehenderit in voluptate velit esseLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in  eprehenderit in voluptate velit esseLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in  eprehenderit in voluptate velit esseLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in  eprehenderit in voluptate velit esseLorem ipsum dolor </p>
+	</div>
+	<div id="contacter">Contactez moi:<br>
+	<form>
+		<label for="mail" >E-mail *</label><br>
+		<input type="text" class="mail" name="mail" /><br>
+		<label for="objet" >Objet</label><br>
+		<input type="text" class="obj" name="objet" /><br>
+		<label for="massage" >Message *</label><br>
+		<textarea name="message" class="mesg"></textarea><br><br>
+		<input type="submit" class="valider" value="Envoyer"/>
+	</form>
+	</div>
+
+{% endblock %}
