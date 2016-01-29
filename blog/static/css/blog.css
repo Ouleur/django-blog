@@ -66,6 +66,12 @@
     margin-top: 50px;
 }
 
+.imageG img{
+    height: 420px;
+    width: 420px;
+      border-radius: 50%;
+}
+
 .hello {
     right: 460px;
     margin-left: 70px;
