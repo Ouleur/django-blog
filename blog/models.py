@@ -25,3 +25,15 @@ class  Post(models.Model):
 	def __str__(self):
 		return self.title
 
+
+
+class  Biographie(models.Model):
+	"""docstring for  Biographie"""
+
+	contenu = models.TextField()
+	created_date = models.DateTimeField(default=timezone.now)
+	published_date = models.DateTimeField(blank=True, null=True)
+
+	def publish(self):
+		self.published_date = timezone.now()
+		self.save()

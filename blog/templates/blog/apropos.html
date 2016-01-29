@@ -3,7 +3,11 @@
 
 {% block content %}
 	<div id="bio">Ma Biographie:<br><br>
-	<img src="{% static "img/myphoto.png" %}"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in  eprehenderit in voluptate velit esseLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in  eprehenderit in voluptate velit esseLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in  eprehenderit in voluptate velit esseLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in  eprehenderit in voluptate velit esseLorem ipsum dolor </p>
+	<img src="{% static "img/myphoto.png" %}"><p>
+	{% for b in biographie %}
+		<p>{{ b.contenu|linebreaks }}</p>
+	{% endfor %}
+	</p>
 	</div>
 	<div id="contacter">Contactez moi:<br>
 	<form>
