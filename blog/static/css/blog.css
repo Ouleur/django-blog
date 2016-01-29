@@ -3,7 +3,7 @@
     padding: 0;
 }
 .line {
-    height: 10px;
+    height: 7px;
     background-color: #474345;
 }
 
@@ -11,14 +11,21 @@
     height: 80px;
     
 }
+
+.header-min {
+    width: 1100px;
+    margin: auto;
+}
+
 .logo {
-    margin-left: 280px;
+
 }
 .menu {
     color: #989898;
     right: 160px;
-    position: absolute;
-    top: 40px;
+    margin-top: -20px;
+    float: right;
+
 }
 
 .menu ul li{
@@ -30,72 +37,86 @@
     text-decoration: none;
     color: #989898;
 
+
 }
 .content {
     background-color: #c3c1c2;
-    height: 600px;
+    height: 517px;
 }
 
+.content-min{
+    width: 1100px;
+    margin: auto;
+}
+
+.imageG,.content-min-1 {
+    display: inline-block;
+}   
+
+.content-min-1 {
+    height: 420px;
+
+}
 .imageG {
-    position: absolute;
-    height: 450px;
-    width: 450px;
-    top: 120px;
-    left: 250px;
+    height: 420px;
+    width: 420px;
+
     border-radius: 50%;
     background-color: #323f4a;
+    margin-top: 50px;
 }
 
 .hello {
-    position: absolute;
-    top: 100px; 
     right: 460px;
+    margin-left: 70px;
 }
 
 .hello h1 {
     font-size: 6em;
+
 }
 
 #bit {
     font-size: 3em;
 }
 
+
 #text {
     width: 500px;
-    position: absolute;
+    margin-left: 70px;
     right: 230px;
     top: 450px; 
 }
 .imageP1,.imageP2,.imageP3{
-    top: 280px;
+    margin-top: 0px;
     margin-left: 50px;
     text-align: center;
+    display: inline-block;
 
 }
 .imageP1 {
-    position: absolute;
+    
     height: 150px;
     width: 150px;
-    left: 700px;
+    left: 600px;
     border-radius: 50%;
     background-color: #f00261;
 
 }
 .imageP2 {
-    position: absolute;
+   
     height: 150px;
     width: 150px;
-    left: 880px;
+    left: 780px;
     border-radius: 50%;
     background-color: #1d8fb9;
 
 }
 
 .imageP3 {
-    position: absolute;
     height: 150px;
     width: 150px;
-    left: 1060px;
+    left: 960px;
     border-radius: 50%;
     background-color: #2fda2b;
 
@@ -103,7 +124,7 @@
 
 .imageP1 p,.imageP2 p,.imageP3 p {
     margin-top: 60px;
-    color: #c1c1c1;
+    color: #fff;
     font-size: 1.5em;
 
 }
