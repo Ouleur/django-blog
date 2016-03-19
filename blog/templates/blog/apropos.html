@@ -10,14 +10,15 @@
 	</p>
 	</div>
 	<div id="contacter">Contactez moi:<br>
-	<form>
-		<label for="mail" >E-mail *</label><br>
+	<form method="POST" class="post-form">{% csrf_token %}
+		<!--<label for="mail" >E-mail *</label><br>
 		<input type="text" class="mail" name="mail" /><br>
 		<label for="objet" >Objet</label><br>
 		<input type="text" class="obj" name="objet" /><br>
 		<label for="massage" >Message *</label><br>
-		<textarea name="message" class="mesg"></textarea><br><br>
-		<input type="submit" class="valider" value="Envoyer"/>
+		<textarea name="message" class="mesg"></textarea><br><br>-->
+		{{ form.as_p }}
+		<button type="submit" class="valider">Envoyer</button>
 	</form>
 	</div>
 

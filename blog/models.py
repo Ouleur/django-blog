@@ -2,6 +2,7 @@ from __future__ import unicode_literals
 
 from django.db import models
 from django.utils import timezone
+from send_mail import *
 # Create your models here.
 
 
@@ -11,6 +12,7 @@ class  Post(models.Model):
 
 
 	#Les differents champs de la table Post
+	categorie = models.CharField(max_length=200)
 	author = models.ForeignKey('auth.User')
 	title = models.CharField(max_length=200)
 	text = models.TextField()
@@ -37,3 +39,15 @@ class  Biographie(models.Model):
 	def publish(self):
 		self.published_date = timezone.now()
 		self.save()
+
+class Contact(models.Model):
+	"""docstring for contact"""
+
+	mail= models.CharField(max_length=1000)
+	objet = models.CharField(max_length=1000)
+	message = models.TextField()
+	created_date = models.DateTimeField(default=timezone.now)
+
+	def __str__(self):
+		
+		return self.mail+" [ "+self.objet+" ]"

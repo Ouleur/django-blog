@@ -183,17 +183,29 @@
     width: 329px;
 }
 
-.mail,.obj {
-    width: 329px;
+#id_mail,#id_objet {
+    width: 337px;
     height: 40px;
 }
-.mesg {
+.#id_message{
     width: 329px;
     height: 201px;
 }
 
 .valider {
-    width: 329px;
+    width: 337px;
     height: 40px;
     border-bottom: 2px solid black; 
+}
+.errorlist li {
+    color: red;
+}
+
+
+
+/* Post design */
+.post_title{
+    font-family: 'Oswald', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
 }
